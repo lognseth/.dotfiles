@@ -1,0 +1,5 @@
+[user]
+	name = Mikael Lognseth
+	email = mikael.lognseth@skaylink.com
+[core]
+	excludesfile = /Users/ml/.gitignore_global
