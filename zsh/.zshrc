@@ -11,7 +11,7 @@ export EDITOR="micro"
 ZSH_THEME="amuse"
 
 # Enable command autocorrection
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Plugins
 plugins=(
@@ -52,7 +52,7 @@ alias dbuild='docker buildx build --platform linux/amd64 --push -t'
 alias dev-vm='ssh ml@mlo-ubuntu-vm.germanywestcentral.cloudapp.azure.com'
 alias argocd-server='kubectl port-forward svc/argocd-server -n argocd 8080:443'
 alias argocd-password='kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d'
-
+alias tf='terraform'
 # Syntax highlighting and autocomplete
 [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
 source /Users/ml/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -3,3 +3,5 @@
 	email = mikael.lognseth@skaylink.com
 [core]
 	excludesfile = /Users/ml/.gitignore_global
+[init]
+	defaultbranch = main
