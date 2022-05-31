@@ -53,6 +53,10 @@ alias dev-vm='ssh ml@mlo-ubuntu-vm.germanywestcentral.cloudapp.azure.com'
 alias argocd-server='kubectl port-forward svc/argocd-server -n argocd 8080:443'
 alias argocd-password='kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d'
 alias tf='terraform'
+alias gol='open -na "GoLand.app"'
 # Syntax highlighting and autocomplete
 [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
 source /Users/ml/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
