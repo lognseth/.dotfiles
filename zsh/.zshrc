@@ -5,7 +5,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # Default editor
-export EDITOR="micro"
+export EDITOR="nano"
 
 # Theme
 ZSH_THEME="amuse"
@@ -60,3 +60,6 @@ source /Users/ml/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-hi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
